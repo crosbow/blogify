@@ -1,6 +1,13 @@
+@import "https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
 
 body {
   font-family: "Satoshi", sans-serif;
