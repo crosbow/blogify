@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import MobileBottomNavigation from "@/components/MobileBottomNavigation";
 import Sidebar from "@/components/Sidebar";
+import { Suspense } from "react";
 import "./globals.css";
 
 export const metadata = {
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row">
               {children}
-              <Sidebar />
+              <Suspense>
+                <Sidebar />
+              </Suspense>
             </div>
           </div>
         </section>
